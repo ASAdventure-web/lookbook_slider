@@ -4,7 +4,7 @@ $(document).ready(function(){
   	pager: false,
   	auto: true,
   	autoHover: true,
-  	pause: 6000,
+  	pause: 5000,
   	speed: 1000
   });
 });
