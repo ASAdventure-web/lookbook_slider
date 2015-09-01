@@ -10,26 +10,44 @@
  * http://bxcreative.com
  */
 
+/** REMOVE TITLE BLOCK
+===================================*/
+.thumbContainer .listTitle .h2 {
+	display: none;
+}
 
 /** RESET AND LAYOUT
 ===================================*/
 
-.bx-wrapper {
+ul.lookbookslider {
+	list-style: none;
+}
+
+.lookbookblock .bx-wrapper {
 	position: relative;
 	margin: 0 auto 60px;
 	padding: 0;
 	*zoom: 1;
 }
 
-.bx-wrapper img {
+
+.bx-wrapper .bx-controls {
+	position: static;
+}
+
+.lookbookblock .bx-wrapper img {
 	max-width: 100%;
 	display: block;
+}
+
+ul.lookbookslider {
+	margin-left: 0;
 }
 
 /** THEME
 ===================================*/
 
-.bx-wrapper .bx-viewport {
+.lookbookblock .bx-wrapper .bx-viewport {
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -39,8 +57,8 @@
     	transform: translatez(0);
 }
 
-.bx-wrapper .bx-pager,
-.bx-wrapper .bx-controls-auto {
+.lookbookblock .bx-wrapper .bx-pager,
+.lookbookblock .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	bottom: -30px;
 	width: 100%;
@@ -48,7 +66,7 @@
 
 /* LOADER */
 
-.bx-wrapper .bx-loading {
+.lookbookblock .bx-wrapper .bx-loading {
 	min-height: 50px;
 	background: url(../images/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
@@ -61,7 +79,7 @@
 
 /* PAGER */
 
-.bx-wrapper .bx-pager {
+.lookbookblock .bx-wrapper .bx-pager {
 	text-align: center;
 	font-size: .85em;
 	font-family: Arial;
@@ -70,14 +88,14 @@
 	padding-top: 20px;
 }
 
-.bx-wrapper .bx-pager .bx-pager-item,
-.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+.lookbookblock .bx-wrapper .bx-pager .bx-pager-item,
+.lookbookblock .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
 	display: inline-block;
 	*zoom: 1;
 	*display: inline;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a {
+.lookbookblock .bx-wrapper .bx-pager.bx-default-pager a {
 	background: #666;
 	text-indent: -9999px;
 	display: block;
@@ -90,32 +108,39 @@
 	border-radius: 5px;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active {
+.lookbookblock .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.lookbookblock .bx-wrapper .bx-pager.bx-default-pager a.active {
 	background: #000;
+}
+
+.lookbookblock .bx-wrapper .bx-viewport {
+	box-shadow: 0px 0px 0px 0px;
+	-webkit-box-shadow: 0 0 0 0;
+    border: none;
+    margin-left: 5px;
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
-.bx-wrapper .bx-prev {
+.lookbookblock .bx-prev {
 	left: 10px;
-	background: url(../images/controls.png) no-repeat 0 -32px;
+	background: url(../images/controls.png) no-repeat 0 -31px;
 }
 
-.bx-wrapper .bx-next {
+.lookbookblock .bx-next {
 	right: 10px;
-	background: url(../images/controls.png) no-repeat -43px -32px;
+	background: url(../images/controls.png) no-repeat -43px -31px;
 }
 
-.bx-wrapper .bx-prev:hover {
+.lookbookblock .bx-prev:hover {
 	background-position: 0 0;
 }
 
-.bx-wrapper .bx-next:hover {
+.lookbookblock .bx-wrapper .bx-next:hover {
 	background-position: -43px 0;
 }
 
-.bx-wrapper .bx-controls-direction a {
+.lookbookblock .bx-wrapper .bx-controls-direction a {
 	position: absolute;
 	top: 50%;
 	margin-top: -16px;
@@ -126,17 +151,17 @@
 	z-index: 9999;
 }
 
-.bx-wrapper .bx-controls-direction a.disabled {
+.lookbookblock .bx-wrapper .bx-controls-direction a.disabled {
 	display: none;
 }
 
 /* AUTO CONTROLS (START / STOP) */
 
-.bx-wrapper .bx-controls-auto {
+.lookbookblock .bx-wrapper .bx-controls-auto {
 	text-align: center;
 }
 
-.bx-wrapper .bx-controls-auto .bx-start {
+.lookbookblock .bx-wrapper .bx-controls-auto .bx-start {
 	display: block;
 	text-indent: -9999px;
 	width: 10px;
@@ -146,12 +171,12 @@
 	margin: 0 3px;
 }
 
-.bx-wrapper .bx-controls-auto .bx-start:hover,
-.bx-wrapper .bx-controls-auto .bx-start.active {
+.lookbookblock .bx-wrapper .bx-controls-auto .bx-start:hover,
+.lookbookblock .bx-wrapper .bx-controls-auto .bx-start.active {
 	background-position: -86px 0;
 }
 
-.bx-wrapper .bx-controls-auto .bx-stop {
+.lookbookblock .bx-wrapper .bx-controls-auto .bx-stop {
 	display: block;
 	text-indent: -9999px;
 	width: 9px;
@@ -161,26 +186,26 @@
 	margin: 0 3px;
 }
 
-.bx-wrapper .bx-controls-auto .bx-stop:hover,
-.bx-wrapper .bx-controls-auto .bx-stop.active {
+.lookbookblock .bx-wrapper .bx-controls-auto .bx-stop:hover,
+.lookbookblock .bx-wrapper .bx-controls-auto .bx-stop.active {
 	background-position: -86px -33px;
 }
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
 
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+.lookbookblock .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
 	text-align: left;
 	width: 80%;
 }
 
-.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+.lookbookblock .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
 	right: 0;
 	width: 35px;
 }
 
 /* IMAGE CAPTIONS */
 
-.bx-wrapper .bx-caption {
+.lookbookblock .bx-wrapper .bx-caption {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -189,7 +214,7 @@
 	width: 100%;
 }
 
-.bx-wrapper .bx-caption span {
+.lookbookblock .bx-wrapper .bx-caption span {
 	color: #fff;
 	font-family: Arial;
 	display: block;
