@@ -10,6 +10,8 @@
  * http://bxcreative.com
  */
 
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
 /** REMOVE TITLE BLOCK
 ===================================*/
 .thumbContainer .listTitle .h2 {
@@ -75,6 +77,23 @@ ul.lookbookslider {
 	top: 0;
 	left: 0;
 	z-index: 2000;
+}
+
+.lookbookblock .lookbooktitle .title-slider {
+	text-align: center;
+	font-size: 3em;
+	text-transform: uppercase;
+	padding-top:25px;
+	font-family: 'Playfair Display', serif;
+	color:#555555;
+}
+
+.lookbookblock .lookbookbol .bol{
+    height: 15px;
+    width: 15px;
+    float: right;
+    margin-left: 5px;
+    margin-top: 3px;
 }
 
 /* PAGER */
@@ -221,3 +240,5 @@ ul.lookbookslider {
 	font-size: .85em;
 	padding: 10px;
 }
+
+/* */
