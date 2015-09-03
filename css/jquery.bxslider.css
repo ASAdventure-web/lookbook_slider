@@ -27,7 +27,7 @@ ul.lookbookslider {
 
 .lookbookblock .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	margin: 0 auto 1em;
 	padding: 0;
 	*zoom: 1;
 }
@@ -105,6 +105,8 @@ ul.lookbookslider {
 	font-weight: bold;
 	color: #666;
 	padding-top: 20px;
+	width: auto;
+	right: 0;
 }
 
 .lookbookblock .bx-wrapper .bx-pager .bx-pager-item,
