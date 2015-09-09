@@ -1,7 +1,7 @@
 window.onload=function(){
 $(document).ready(function(){
   $('.lookbookslider').bxSlider({
-  	pager: false,
+  	pager: true,
   	auto: true,
   	autoHover: true,
   	pause: 3000,
