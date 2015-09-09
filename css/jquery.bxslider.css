@@ -10,7 +10,6 @@
  * http://bxcreative.com
  */
 
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
 /** REMOVE TITLE BLOCK
 ===================================*/
@@ -27,7 +26,7 @@ ul.lookbookslider {
 
 .lookbookblock .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	margin: 0 auto;
 	padding: 0;
 	*zoom: 1;
 }
@@ -80,12 +79,14 @@ ul.lookbookslider {
 }
 
 .lookbookblock .lookbooktitle .title-slider {
-	text-align: center;
-	font-size: 3em;
-	text-transform: uppercase;
-	padding-top:25px;
-	font-family: 'Playfair Display', serif;
-	color:#555555;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-top: 1em;
+    margin: 0;
+    color: #555;
+    font-weight: 500;
+    padding-bottom: 0em;
 }
 
 .lookbookblock .lookbookbol .bol{
@@ -105,6 +106,8 @@ ul.lookbookslider {
 	font-weight: bold;
 	color: #666;
 	padding-top: 20px;
+	width: auto;
+	right: 5px;
 }
 
 .lookbookblock .bx-wrapper .bx-pager .bx-pager-item,
@@ -115,7 +118,7 @@ ul.lookbookslider {
 }
 
 .lookbookblock .bx-wrapper .bx-pager.bx-default-pager a {
-	background: #666;
+	background: #999;
 	text-indent: -9999px;
 	display: block;
 	width: 10px;
@@ -129,7 +132,7 @@ ul.lookbookslider {
 
 .lookbookblock .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .lookbookblock .bx-wrapper .bx-pager.bx-default-pager a.active {
-	background: #000;
+	background: #555;
 }
 
 .lookbookblock .bx-wrapper .bx-viewport {
