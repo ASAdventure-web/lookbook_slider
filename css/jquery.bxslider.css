@@ -45,6 +45,13 @@ ul.lookbookslider {
 	margin-left: 0;
 }
 
+.span9.listHeader.hidden-phone {
+    display: block !important;
+}
+
+.lookbookblock .bx-wrapper .bx-viewport {
+	min-height: 100px;
+}
 /** THEME
 ===================================*/
 
