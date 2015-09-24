@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.lookbookslider').bxSlider({
   	pager: true,
   	auto: true,
-  	autoHover: true,
+  	autoHover: false,
   	pause: 3000,
   	speed: 1000
   });
