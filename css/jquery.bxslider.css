@@ -292,7 +292,7 @@ ul.lookbookslider {
 
 .link{
 	float:left;
-	width:33.33333%;
+	width:25%;
 	height:50px;
 	background-color:inherit;
 }
@@ -310,6 +310,12 @@ ul.lookbookslider {
     height: 44px;
 }
 
+.link p {
+	font-family: 'Lato', sans-serif!important;
+	font-size: 11px;
+	font-weight: 300;
+}
+
 .align {
 	height:20px;
 	margin-top: 15px;
@@ -319,8 +325,6 @@ ul.lookbookslider {
 }
 
 .link{
-	height:20px;
-	margin-top: 15px;
 	font-family: 'Lato', sans-serif!important;
 	font-size:11px;
 	font-weight: 300;
@@ -338,8 +342,9 @@ ul.lookbookslider {
     transform: rotate(180deg);
     width: 20px;
     float: right;
-    margin-top: 1px;
+    margin-top: 2px;
     color: inherit;
+    margin-left: 5px;
 }
 
 @media (max-width:500px){
@@ -349,8 +354,8 @@ ul.lookbookslider {
 	.kort{
 		margin-top: 10px;
 	}
-	.align{
-		margin-top:7px!important;
+	.link p{
+		margin-top:8px!important;
 	}
 }
 
@@ -360,14 +365,18 @@ ul.lookbookslider {
 	}
 	.align{
 		font-size:18px;
-	    margin-top: 14px;
+	    margin-top: 16px;
+	}
+	.link {
+		height:20px;
+		margin-top: 15px;
 	}
 }
 
 @media (min-width:769px) and (max-width:979px){
 	.align{
 		font-size: 18px;
-		margin-top:14px;
+		margin-top:16px;
 	}
 	.link-1{
 		height:50px;
@@ -375,15 +384,27 @@ ul.lookbookslider {
 	.lookbookblock .lookbooktitle .title-slider {
     	padding-top: 0.5em;
 	}
+	.link p {
+		font-size: 11px!important;
+		margin-top:17px!important;
+	}
+	.link {
+		height:20px;
+		margin-top: 15px;
+	}
 }
 
 @media (min-width:980px) and (max-width:1199px){
 	.align{
 		font-size: 18px; 
-		margin-top: 14px;
+		margin-top: 16px;
 	}
 	.lookbookblock .lookbooktitle .title-slider {
    		font-size: 3.5em;
+	}
+	.link p {
+		font-size: 13px; 
+		margin-top: 16px;
 	}
 }
 
@@ -402,5 +423,8 @@ ul.lookbookslider {
    		font-size: 5em;
     	padding-top: 0.6em;
 	}
+.link p {
+		font-size:14px;
+		margin-top:18px;
+	}
 }
-
