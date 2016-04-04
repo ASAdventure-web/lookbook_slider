@@ -304,6 +304,13 @@ ul.lookbookslider {
 	background-color:inherit;
 }
 
+.link-2{
+	float:left;
+	width:50%;
+	height:50px;
+	background-color:inherit;
+}
+
 .text {
     display: inline-block;
     /*border-bottom: 1px solid #000;*/
